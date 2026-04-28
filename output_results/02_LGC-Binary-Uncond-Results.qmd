@@ -1,0 +1,99 @@
+---
+title: "Results of the Uncoditional Second-Order Latent Growth Curve Models"
+author: "Enrico Perinelli   \n_Department of Psychology and Cognitive Science, University of Trento_"
+date: last-modified
+date-format: "[Last Updated on] MMMM DD, YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    editor: visual
+    embed-resources: true
+    code-fold: false
+    code_download: yes # does not work
+---
+
+```{r}
+library(lavaan)
+load("../socDesWorkspace.RData")
+```
+
+## Intercept-only Model
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(fit_LGCmodel1_int, fit.measures = TRUE, standardized = TRUE)
+
+```
+
+## Linear growth Model
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(fit_LGCmodel2_slope, fit.measures = TRUE, standardized = TRUE)
+
+```
+
+## Latent basis (nonlinear) Model
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(fit_LGCmodel3_slopeNL, fit.measures = TRUE, standardized = TRUE)
+
+```
+
+## Model Comparison
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+lavTestLRT(
+  fit_LGCmodel1_int,
+  fit_LGCmodel2_slope,
+  fit_LGCmodel3_slopeNL,
+  # fit_LGCmodel4_Quadr     # Removed, since cov matrix of latent variables is not positive definite
+  method =  "satorra.2000"
+)
+
+```
+
+## Main parameters for the best fitting LGC
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+parameterEstimates(
+  fit_LGCmodel3_slopeNL, standardized = T
+)[parameterEstimates(
+  fit_LGCmodel3_slopeNL)$lhs == "s" | parameterEstimates(
+    fit_LGCmodel3_slopeNL)$rhs == "s" | parameterEstimates(
+      fit_LGCmodel3_slopeNL)$rhs == "i" , ]
+```
+
+CIs for the standardized parameters
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+standardizedSolution(
+  fit_LGCmodel3_slopeNL, ci = TRUE
+)[parameterEstimates(
+  fit_LGCmodel3_slopeNL)$lhs == "s" | parameterEstimates(
+    fit_LGCmodel3_slopeNL)$rhs == "s" | parameterEstimates(
+      fit_LGCmodel3_slopeNL)$rhs == "i" , ]
+```

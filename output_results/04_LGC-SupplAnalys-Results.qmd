@@ -1,0 +1,46 @@
+---
+title: "Results of Supplementary Analysis"
+author: "Enrico Perinelli   \n_Department of Psychology and Cognitive Science, University of Trento_"
+date: last-modified
+date-format: "[Last Updated on] MMMM DD, YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    editor: visual
+    embed-resources: true
+    code-fold: false
+    code_download: yes # does not work
+---
+
+```{r}
+library(lavaan)
+load("../socDesWorkspace.RData")
+```
+
+## Adding covariances and effect (on Job Satisfaction 2024) of Age (`lftdcat`)
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(
+  fit_LGCcond3_BF_JS_Age,
+  fit.measures = TRUE,
+  standardized = TRUE,
+  rsquare = TRUE
+)
+
+```
+
+### Heywood cases
+
+Two standardized loadings slightly exceeded 1 (ext_3_19, $\lambda = 1.021$; opn_1_19, $\lambda = 1.001$), indicating minor Heywood cases. Given that these deviations were very small and occurred in the context of a highly parameterized model with categorical indicators estimated using DWLS, they are likely attributable to sampling fluctuations and model complexity rather than substantive model misspecification. Such small inadmissible estimates are not uncommon in structural equation models and, when close to the admissible boundary, are generally considered non-problematic (Chen et al., 2001; Kolenikov \& Bollen, 2012).
+
+References
+
+-   Chen, F., Bollen, K. A., Paxton, P., Curran, P. J., & Kirby, J. B. (2001). Improper solutions in structural equation models: Causes, consequences, and strategies. *Sociological Methods \& Research*, *29*(4), 468-508. [https://doi.org/10.1177/0049124101029004003](https://doi.org/10.1177/0049124101029004003)
+
+-   Kolenikov, S., & Bollen, K. A. (2012). Testing negative error variances: Is a Heywood case a symptom of misspecification?. *Sociological Methods \& Research*, *41*(1), 124-167. [https://doi.org/10.1177/0049124112442138](https://doi.org/10.1177/0049124112442138)

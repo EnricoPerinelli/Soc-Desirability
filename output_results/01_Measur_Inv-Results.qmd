@@ -1,0 +1,53 @@
+---
+title: "Results of Measurement Invariance"
+author: "Enrico Perinelli   \n_Department of Psychology and Cognitive Science, University of Trento_"
+date: last-modified
+date-format: "[Last Updated on] MMMM DD, YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    editor: visual
+    embed-resources: true
+    code-fold: false
+    code_download: yes # does not work
+---
+
+```{r}
+library(lavaan)
+load("../socDesWorkspace.RData")
+```
+
+## Configural Invariance
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(fit_MI_configural, fit.measures = TRUE, standardized = TRUE)
+
+```
+
+## Thresholds/loadings Invariance
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(fit_MI_thr_load, fit.measures = TRUE, standardized = TRUE)
+
+```
+
+## Model Comparison
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+lavTestLRT(fit_MI_configural, fit_MI_thr_load)
+
+```

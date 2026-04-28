@@ -1,0 +1,52 @@
+---
+title: "Results of Second-Order Latent Growth Curve Models"
+author: "Enrico Perinelli   \n_Department of Psychology and Cognitive Science, University of Trento_"
+date: last-modified
+date-format: "[Last Updated on] MMMM DD, YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    editor: visual
+    embed-resources: true
+    code-fold: false
+    code_download: yes # does not work
+---
+
+```{r}
+library(lavaan)
+load("../socDesWorkspace.RData")
+```
+
+## Covariances with Big Five (2019)
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(
+  fit_LGCcond1_BF,
+  fit.measures = TRUE,
+  standardized = TRUE,
+  rsquare = TRUE
+)
+
+```
+
+## Effects on Job Satisfaction (2024)
+
+```{r}
+#| echo: true
+#| eval: true
+#| include: true
+
+summary(
+  fit_LGCcond2_BF_JS,
+  fit.measures = TRUE,
+  standardized = TRUE,
+  rsquare = TRUE
+)
+
+```
