@@ -10,49 +10,49 @@ https://doi.org/10.1016/j.jrp.2026.104726)
 
 ### Folders and Files
 
-[`code1_R_pre-proces`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code1_R_pre-proces)
+[**code1_R_pre-proces**](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code1_R_pre-proces)
 
 - R script ([`00_pre-processing.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code1_R_pre-proces/00_pre-processing.R)) for the preliminary data wrangling phase.
 
 
 
-[`code2_R_analyses`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code2_R_analyses)
+[**code2_R_analyses**](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code2_R_analyses)
 
 - Five R scripts related to all the analyses reported in the article.
 
 
 
-[`figs`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs)
+[**figs**](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs)
 
 - Figure 1
 
-  - [`Fig1-plot-categor-LatVar.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1-plot-categor-LatVar.R): This R script generates the two plots on the right-hand side, merges them with the left-hand side figure, and exports the final combined figure.\
+  - [`Fig1-plot-categor-LatVar.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1-plot-categor-LatVar.R): This R script generates the two plots on the right-hand side, merges them with the left-hand side figure, and exports the final combined figure.
 
-  - [`Fig1a-Latent-categor.tex`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1a-Latent-categor.tex): LaTeX code generating the latent variable representation on the left-hand side. The generated PDF is in [`Fig1a-Latent-categor.pdf`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1a-Latent-categor.pdf), and the converted JPG file is in [`Fig1a-Latent-categor.jpg`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1a-Latent-categor.jpg).\
+  - [`Fig1a-Latent-categor.tex`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1a-Latent-categor.tex): LaTeX code generating the latent variable representation on the left-hand side. The generated PDF is in [`Fig1a-Latent-categor.pdf`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1a-Latent-categor.pdf), and the converted JPG file is in [`Fig1a-Latent-categor.jpg`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1a-Latent-categor.jpg).
 
   - [`Fig1.jpg`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1.jpg): Final combined figure generated using the command at the bottom of [`Fig1-plot-categor-LatVar.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig1-plot-categor-LatVar.R).
 
 - Figure 2
 
-  - [`Fig2-rank-inv.tex`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig2-rank-inv.tex): LaTeX source file.\
+  - [`Fig2-rank-inv.tex`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig2-rank-inv.tex): LaTeX source file.
 
   - Output available as [`Fig2-rank-inv.pdf`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig2-rank-inv.pdf) and [`Fig2-rank-inv.jpg`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig2-rank-inv.jpg).
 
 - Figures 3 and 4
 
-  - Generated within: [`code2_R_analyses/00_load_descr_corr_rel.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code2_R_analyses/00_load_descr_corr_rel.R).\
+  - Generated within: [`code2_R_analyses/00_load_descr_corr_rel.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code2_R_analyses/00_load_descr_corr_rel.R).
 
   - Available as PNG files in [`Fig3-sd_item_heatmap.png`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig3-sd_item_heatmap.png) and [`Fig4-tetrachoric_matrix.png`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig4-tetrachoric_matrix.png), respectively.
 
 - Figure 5
 
-  - [`Fig5-SOLGC.tex`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig5-SOLGC.tex): LaTeX source file.\
+  - [`Fig5-SOLGC.tex`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig5-SOLGC.tex): LaTeX source file.
 
   - Output available as [`Fig5-SOLGC.pdf`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig5-SOLGC.pdf) and [`Fig5-SOLGC.jpg`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig5-SOLGC.jpg).
 
 
 
-[`output_results`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/output_results)
+[**output_results**](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/output_results)
 
 - Descriptive statistics:
 
@@ -60,7 +60,7 @@ https://doi.org/10.1016/j.jrp.2026.104726)
 
 - Full results for tetrachoric correlations:
 
-  - [`tetrach_corr.xlsx`](https://github.com/EnricoPerinelli/Soc-Desirability/blob/main/output_results/tetrach_corr.xlsx): values for the correlations shown in the correlogram/heatmap in [`Figure 4`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig4-tetrachoric_matrix.png).\
+  - [`tetrach_corr.xlsx`](https://github.com/EnricoPerinelli/Soc-Desirability/blob/main/output_results/tetrach_corr.xlsx): values for the correlations shown in the correlogram/heatmap in [`Figure 4`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig4-tetrachoric_matrix.png).
   - [`tetrach_tau.xlsx`](https://github.com/EnricoPerinelli/Soc-Desirability/blob/main/output_results/tetrach_tau.xlsx): values of the threshold parameter ($\tau_{1}$) for each item.
 
 - Full results for Structural Equation Models:
