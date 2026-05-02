@@ -14,6 +14,8 @@
 # of category 0. This illustrates how observed categorical responses
 # can be interpreted as discretizations of a latent continuous variable.
 
+# Finally, the 2 plots were merged with the probit latent variable representation created in LaTeX
+
 
 rm(list = ls())
 
@@ -108,12 +110,16 @@ g2 <- ggplot(df_curve, aes(x = x, y = y)) +
 g1
 g2
 
+
 # Merge on the left and create a blank part in the right
 placeholder <- ggplot() + theme_void()
 placeholder | (g2 / g1)
 
 
-# Merge with jpg
+# -------------------------
+# Merge the jpg
+# -------------------------
+
 
 img <- readJPEG("Fig1a-Latent-categor.jpg")
 
