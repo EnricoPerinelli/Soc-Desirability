@@ -1,4 +1,4 @@
-### Supplementary Material -- Social Desirability Stability and Change (*JRP*, 2026)
+## Supplementary Material - Social Desirability Stability and Change (*JRP*, 2026)
 
 This repository contains code, figures, and full results related to the following article:
 
@@ -14,13 +14,13 @@ https://doi.org/10.1016/j.jrp.2026.104726)
 
 - R script ([`00_pre-processing.R`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code1_R_pre-proces/00_pre-processing.R)) for the preliminary data wrangling phase.
 
-------------------------------------------------------------------------
+
 
 [`code2_R_analyses`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/code2_R_analyses)
 
 - Five R scripts related to all the analyses reported in the article.
 
-------------------------------------------------------------------------
+
 
 [`figs`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs)
 
@@ -50,7 +50,7 @@ https://doi.org/10.1016/j.jrp.2026.104726)
 
   - Output available as [`Fig5-SOLGC.pdf`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig5-SOLGC.pdf) and [`Fig5-SOLGC.jpg`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/figs/Fig5-SOLGC.jpg).
 
-------------------------------------------------------------------------
+
 
 [`output_results`](https://github.com/EnricoPerinelli/Soc-Desirability/tree/main/output_results)
 
