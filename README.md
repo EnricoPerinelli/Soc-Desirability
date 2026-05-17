@@ -6,6 +6,11 @@ This repository contains code, figures, and full results related to the followin
 https://doi.org/10.1016/j.jrp.2026.104726 ](	
 https://doi.org/10.1016/j.jrp.2026.104726)
 
+This article is published under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+A copy of the published article is available in this repository: [Perinelli-2026.pdf](https://github.com/EnricoPerinelli/Soc-Desirability/blob/main/Perinelli-2026.pdf)
+
+
 ------------------------------------------------------------------------
 
 ### Folders and Files
@@ -109,6 +114,6 @@ data/
 
 ### License
 
-This Supplementary Material provided in this GitHub repository is licensed under the\
+The Supplementary Material provided in this GitHub repository is licensed under the\
 **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.\
 Read more: [![Creative Commons License](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
