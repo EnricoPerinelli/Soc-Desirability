@@ -8,7 +8,7 @@ https://doi.org/10.1016/j.jrp.2026.104726)
 
 This article is published under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-A copy of the published article is available in this repository: [Perinelli-2026.pdf](https://github.com/EnricoPerinelli/Soc-Desirability/blob/main/Perinelli-2026.pdf)
+A copy of the published article is available in this repository: [Perinelli-2026.pdf](https://enricoperinelli.github.io/Soc-Desirability/Perinelli-2026.pdf)
 
 
 ------------------------------------------------------------------------
